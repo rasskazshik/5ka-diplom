@@ -1,0 +1,216 @@
+body::-webkit-scrollbar {
+width: 0px;
+
+}
+/*пятерочный шрифт из руководства по стилю*/
+@font-face {
+    font-family: FuturaFuturisCBold;
+    src: url(../fonts/futurafuturisc-bold.ttf);
+}
+body{
+    background-image: url("../images/background.jpg");    
+}
+/*расширяем высоту центрального контейнера и задаем прозрачный фон*/
+.bodyContainer{    
+    background-color: rgba(227,229,230,.5);
+    border-top: 1px rgb(227,229,230) solid;
+    min-height: 100vh;
+}
+/*строка заглавия*/
+.headerRow{
+    background-color: rgb(230,24,1);
+    margin-top:10px;
+    font-family: FuturaFuturisCBold;
+    color: rgb(227,229,230);
+}
+/*контактный телефон*/
+.contactsInfo a{
+    color:white;
+    cursor: pointer;
+    text-decoration: underline;
+    outline: none;
+}
+.contactsInfo a:hover{
+    color:rgb(212,196,37);
+}
+.contactsInfoSubtext{
+    color:white;
+}
+.subName{
+    color:white;
+}
+/*колонки заглавия*/
+.headerCol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/*строка навигации*/
+.navigationRow{
+    border-top: 5px solid rgb(227,229,230);
+    margin: 0;
+    background-color: rgb(230,24,1);
+}
+/*активная вкладка навигации*/
+.active div{
+    text-decoration: underline;
+}
+
+.navButton{
+    margin:3px;
+    border-radius: 2px;
+    border:1px solid white;
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    cursor: pointer; 
+    margin-left: 15px;
+}
+.navButton:hover{
+    border:1px solid rgb(220, 220, 220);
+    background-color: rgb(220, 220, 220);
+}
+.footer, .navigation, .adminpanel{
+    background-image: url("../images/footer.jpg");
+    background-position-y: center;
+    background-repeat: repeat-x; 
+    margin-top:5px;
+    font-family: FuturaFuturisCBold;
+}
+.footer div, .navigation div, .adminpanel div{
+    max-width: 300px;
+    border-radius: 15px;
+    border:1px solid rgb(230,24,1);
+    background-color: rgb(230,24,1);
+    color:white;
+    text-align: center;
+    cursor:pointer;
+    margin: 3px auto; 
+}
+.footer a, .navigation a, .adminpanel a{
+    max-width: 300px; 
+    text-decoration: none;
+    outline: none;
+}
+.footer div:hover, .navigation div:hover, .adminpanel div:hover{
+    color:lightgrey;
+}
+/*авторизация*/
+.auth{
+    color: white;
+}
+.logo{
+    width: 100%;
+}
+.logout{
+    cursor: pointer;
+}
+/*аватар*/
+.logout img, .userInfo img{
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+}
+/*контент страницы*/
+.content{
+    margin:10px;
+}
+.contentRow{
+    font-family: "5ka Sans","HelveticaNeueCyr","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*заголовок в контенте*/
+.contentHeader{
+    margin: 3px -10px;
+    padding: 0 20px;
+    text-shadow: 1px 1px 2px black;
+    color: black;
+    text-align: center;
+}
+.purposeContent{
+}
+/*текст предназначения*/
+.purposeText{
+    align-items: center;
+}
+.purposeText p{
+    padding-left: 5px;
+    text-align:justify;
+    font-size:1.2em;
+}
+/*картинка предназначения*/
+.purposeText img{
+    width: 100%;
+}
+/*предложения сети*/
+.otherOrder{
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 2px black;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 760px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.otherOrder a{    
+    text-decoration: none;
+}
+.otherOrder:hover{
+    background-color: rgba(211,211,211,.5);
+}
+.otherOrder img {
+    max-width: 150px;
+}
+.otherOrder a{
+    color: black;
+}
+/*карта*/
+#map {
+    height: 60vh;
+    padding: 0;
+    margin: 0;
+}
+
+.feedback, .comment{
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 2px black;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 760px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,.5);
+}
+
+.date{
+    font-weight: bolder;
+}
+.userInfo{
+   margin-bottom: 5px;
+}
+.feedbackText{
+   
+}
+.feedbackTextarea{
+    width: 100%;
+}
+.feedback input{
+    width: 100%;
+}
+
+.commentTitle{
+    padding: 10px;
+    max-width: 760px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.containerForFeedbacksWithoutComment, .containerForManageFeedbacks{
+    display:none;
+}
+
+.adminpanelSearch, .adminpanelSearchButton{
+    width: 100%;
+    margin: 5px 0;
+}
